@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/zmall-basic-parent/zmall-basic-parent.iml" filepath="$PROJECT_DIR$/zmall-basic-parent/zmall-basic-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zmall-basic-parent/zmall-basic-util/zmall-basic-util.iml" filepath="$PROJECT_DIR$/zmall-basic-parent/zmall-basic-util/zmall-basic-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zmall-config-server/zmall-config-server.iml" filepath="$PROJECT_DIR$/zmall-config-server/zmall-config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zmall-eureka/zmall-eureka.iml" filepath="$PROJECT_DIR$/zmall-eureka/zmall-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zmall-parent.iml" filepath="$PROJECT_DIR$/zmall-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zmall-plat-parent/zmall-plat-interface/zmall-plat-interface.iml" filepath="$PROJECT_DIR$/zmall-plat-parent/zmall-plat-interface/zmall-plat-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zmall-plat-parent/zmall-plat-parent.iml" filepath="$PROJECT_DIR$/zmall-plat-parent/zmall-plat-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zmall-plat-parent/zmall-plat-service/zmall-plat-service.iml" filepath="$PROJECT_DIR$/zmall-plat-parent/zmall-plat-service/zmall-plat-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zmall-zuul/zmall-zuul.iml" filepath="$PROJECT_DIR$/zmall-zuul/zmall-zuul.iml" />
+    </modules>
+  </component>
+</project>

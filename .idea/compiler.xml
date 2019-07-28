@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zmall-basic-util" />
+        <module name="zmall-config-server" />
+        <module name="zmall-eureka" />
+        <module name="zmall-plat-interface" />
+        <module name="zmall-plat-service" />
+        <module name="zmall-zuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="zmall-basic-parent" target="8" />
+      <module name="zmall-basic-util" target="8" />
+      <module name="zmall-config-server" target="8" />
+      <module name="zmall-eureka" target="8" />
+      <module name="zmall-parent" target="8" />
+      <module name="zmall-plat-interface" target="8" />
+      <module name="zmall-plat-parent" target="8" />
+      <module name="zmall-plat-service" target="8" />
+      <module name="zmall-zuul" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
