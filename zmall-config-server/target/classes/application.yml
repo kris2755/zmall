@@ -1,0 +1,18 @@
+server:
+  port: 4001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1001/eureka
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/kris2755/zmall-config.git
+          username: kris2755
+          password: zh19970808
