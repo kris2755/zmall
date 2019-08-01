@@ -15,6 +15,7 @@
         <module>zmall-basic-parent</module>
         <module>zmall-plat-parent</module>
         <module>zmall-product-parent</module>
+        <module>zmall-common-parent</module>
 
     </modules>
     <properties>

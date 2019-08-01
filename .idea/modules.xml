@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/zmall-common-parent/common-interface/common-interface.iml" filepath="$PROJECT_DIR$/zmall-common-parent/common-interface/common-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zmall-common-parent/common-service/common-service.iml" filepath="$PROJECT_DIR$/zmall-common-parent/common-service/common-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/zmall-basic-parent/zmall-basic-parent.iml" filepath="$PROJECT_DIR$/zmall-basic-parent/zmall-basic-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/zmall-basic-parent/zmall-basic-util/zmall-basic-util.iml" filepath="$PROJECT_DIR$/zmall-basic-parent/zmall-basic-util/zmall-basic-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zmall-common-parent/zmall-common-parent.iml" filepath="$PROJECT_DIR$/zmall-common-parent/zmall-common-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/zmall-config-server/zmall-config-server.iml" filepath="$PROJECT_DIR$/zmall-config-server/zmall-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/zmall-eureka/zmall-eureka.iml" filepath="$PROJECT_DIR$/zmall-eureka/zmall-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/zmall-parent.iml" filepath="$PROJECT_DIR$/zmall-parent.iml" />

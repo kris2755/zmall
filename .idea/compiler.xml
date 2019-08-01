@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="common-interface" />
+        <module name="common-service" />
         <module name="zmall-basic-util" />
         <module name="zmall-config-server" />
         <module name="zmall-eureka" />
@@ -18,8 +20,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="common-interface" target="8" />
+      <module name="common-service" target="8" />
       <module name="zmall-basic-parent" target="8" />
       <module name="zmall-basic-util" target="8" />
+      <module name="zmall-common-parent" target="8" />
       <module name="zmall-config-server" target="8" />
       <module name="zmall-eureka" target="8" />
       <module name="zmall-parent" target="8" />
