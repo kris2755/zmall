@@ -10,6 +10,10 @@
       <module fileurl="file://$PROJECT_DIR$/zmall-plat-parent/zmall-plat-interface/zmall-plat-interface.iml" filepath="$PROJECT_DIR$/zmall-plat-parent/zmall-plat-interface/zmall-plat-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/zmall-plat-parent/zmall-plat-parent.iml" filepath="$PROJECT_DIR$/zmall-plat-parent/zmall-plat-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/zmall-plat-parent/zmall-plat-service/zmall-plat-service.iml" filepath="$PROJECT_DIR$/zmall-plat-parent/zmall-plat-service/zmall-plat-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zmall-basic-parent/zmall-plus-generator/zmall-plus-generator.iml" filepath="$PROJECT_DIR$/zmall-basic-parent/zmall-plus-generator/zmall-plus-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zmall-product-parent/zmall-product-interface/zmall-product-interface.iml" filepath="$PROJECT_DIR$/zmall-product-parent/zmall-product-interface/zmall-product-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zmall-product-parent/zmall-product-parent.iml" filepath="$PROJECT_DIR$/zmall-product-parent/zmall-product-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zmall-product-parent/zmall-product-service/zmall-product-service.iml" filepath="$PROJECT_DIR$/zmall-product-parent/zmall-product-service/zmall-product-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/zmall-zuul/zmall-zuul.iml" filepath="$PROJECT_DIR$/zmall-zuul/zmall-zuul.iml" />
     </modules>
   </component>

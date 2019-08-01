@@ -11,6 +11,9 @@
         <module name="zmall-eureka" />
         <module name="zmall-plat-interface" />
         <module name="zmall-plat-service" />
+        <module name="zmall-plus-generator" />
+        <module name="zmall-product-interface" />
+        <module name="zmall-product-service" />
         <module name="zmall-zuul" />
       </profile>
     </annotationProcessing>
@@ -23,6 +26,10 @@
       <module name="zmall-plat-interface" target="8" />
       <module name="zmall-plat-parent" target="8" />
       <module name="zmall-plat-service" target="8" />
+      <module name="zmall-plus-generator" target="8" />
+      <module name="zmall-product-interface" target="8" />
+      <module name="zmall-product-parent" target="8" />
+      <module name="zmall-product-service" target="8" />
       <module name="zmall-zuul" target="8" />
     </bytecodeTargetLevel>
   </component>

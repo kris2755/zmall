@@ -17,6 +17,7 @@
     <url>http://www.example.com</url>
     <modules>
         <module>zmall-basic-util</module>
+        <module>zmall-plus-generator</module>
     </modules>
 
     <properties>

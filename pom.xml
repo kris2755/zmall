@@ -14,6 +14,7 @@
         <module>zmall-zuul</module>
         <module>zmall-basic-parent</module>
         <module>zmall-plat-parent</module>
+        <module>zmall-product-parent</module>
 
     </modules>
     <properties>
