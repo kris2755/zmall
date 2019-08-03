@@ -1,6 +1,7 @@
 package cn.itsource.zmall.service.impl;
 
 import cn.itsource.util.AjaxResult;
+import cn.itsource.zmall.PageClient;
 import cn.itsource.zmall.RedisClient;
 import cn.itsource.zmall.domain.Product;
 import cn.itsource.zmall.domain.ProductType;
@@ -32,7 +33,9 @@ public class ProductTypeServiceImpl extends ServiceImpl<ProductTypeMapper, Produ
     private RedisClient redisClient;
 
     @Autowired
-    private ProductTypeMapper productTypeMapper;
+    private PageClient pageClient;
+
+
     @Override
     public List<ProductType> loadTypeTree() {
         AjaxResult result = redisClient.get("productTypes");
@@ -45,6 +48,31 @@ public class ProductTypeServiceImpl extends ServiceImpl<ProductTypeMapper, Produ
             redisClient.set("productTypes", JSON.toJSONString(productTypes));
         }
         return productTypes;
+    }
+
+    @Override
+    public void genHomePage() {
+        Map<String, Object> map = new HashMap<>();
+        String templatepath ="C:\\Users\\62685\\Desktop\\zmall\\zmall-parent\\zmall-product-parent\\zmall-product-service\\src\\main\\resources\\template\\product.type.vm";
+        String targetpath="C:\\Users\\62685\\Desktop\\zmall\\zmall-parent\\zmall-product-parent\\zmall-product-service\\src\\main\\resources\\template\\product.type.vm.html";
+
+        List<ProductType> productTypes = loadTypeTree();
+        map.put("model",productTypes);
+        map.put("templatepath",templatepath);
+        map.put("targetpath",targetpath);
+        pageClient.genPage(map);
+
+        map = new HashMap<>();
+        templatepath = "C:\\Users\\62685\\Desktop\\zmall\\zmall-parent\\zmall-product-parent\\zmall-product-service\\src\\main\\resources\\template\\home.vm";
+        targetpath = "C:\\Users\\62685\\Desktop\\zmall-web\\zmall-web-plat\\zmall-web-home\\home.html";
+        //model 中要有一个数据是staticRoot
+        Map<String,String> model = new HashMap<>();
+        model.put("staticRoot","C:\\Users\\62685\\Desktop\\zmall\\zmall-parent\\zmall-product-parent\\zmall-product-service\\src\\main\\resources\\");
+        map.put("model",model);
+        map.put("templatepath",templatepath);
+        map.put("targetpath",targetpath);
+
+        pageClient.genPage(map);
     }
 
 
@@ -63,7 +91,14 @@ public class ProductTypeServiceImpl extends ServiceImpl<ProductTypeMapper, Produ
                 list.add(productType);
             }else{
                 ProductType parent = map.get(productType.getPid());
-                parent.getChildren().add(productType);
+                List<ProductType> children = parent.getChildren();
+                //如果children为空，就为children创建一个新的数组，让他为空
+                if (children==null){
+                    children = new ArrayList<>();
+                }
+                children.add(productType);
+                parent.setChildren(children);
+
             }
         }
         return list;

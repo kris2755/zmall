@@ -42,7 +42,7 @@ public class ProductType extends Model<ProductType> {
     private Long pid;
     //子菜单
     @TableField(exist = false)
-    private List<ProductType> children = new ArrayList<>();
+    private List<ProductType> children;
     /**
      * 图标
      */
